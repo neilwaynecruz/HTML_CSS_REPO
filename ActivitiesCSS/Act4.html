@@ -27,6 +27,45 @@
         padding: 6px 11.5px;
     }
 
+    .btn-stretch{
+        color: white;
+        background-color: green;
+        border: none;
+        padding: 5px 10px;
+        font-size: 14px;
+        margin: 7px;
+        transition: padding 0.7s;
+    }
+
+    .btn-stretch:hover{
+        padding: 10px 25px;
+    }
+
+    .btn-margin-padding{
+        color: white;
+        background-color: green;
+        border: none;
+        font-size: 14px;
+        cursor: pointer;
+
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        margin-left:10px;
+        margin-right:10px;
+        transition: padding 0.15s, margin 0.15s;
+    }
+
+    .btn-margin-padding:hover{
+        margin-left:0px;
+        margin-right:0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
 </style>
 
 
@@ -53,5 +92,27 @@
     3D Click:
     <button class="btn-Shadow">
         Shadow
+    </button>
+</p>
+
+<p>
+    3D Click:
+    <button class="btn-stretch">
+        Stretch
+    </button>
+</p>
+
+<p>
+    Margin and Padding together:
+    <button class="btn-margin-padding">
+        One
+    </button>
+
+    <button class="btn-margin-padding">
+        Two
+    </button>
+
+    <button class="btn-margin-padding">
+        Three
     </button>
 </p>
