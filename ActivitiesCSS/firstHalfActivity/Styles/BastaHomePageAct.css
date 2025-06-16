@@ -1,0 +1,44 @@
+.btn-add-cart {
+  color: black;
+  font-size: 15px;
+  background-color: rgb(255, 216, 0);
+  border: none;
+  border-radius: 20px;
+  padding: 7px 29px;
+  margin-right: 10px;
+}
+
+.btn-add-cart:hover {
+  background-color: rgba(255, 196, 0, 0.993);
+}
+
+.btn-add-cart:active {
+  opacity: 0.7;
+}
+
+.btn-buy-now {
+  color: black;
+  font-size: 15px;
+  background-color: rgb(255, 164, 18);
+  border: none;
+  border-radius: 20px;
+  padding: 7px 29px;
+  margin-right: 10px;
+}
+
+.btn-buy-now:hover {
+  background-color: rgb(241, 152, 8);
+}
+
+.btn-buy-now:active {
+  opacity: 0.7;
+}
+
+.lbl-one {
+  font-size: 20px;
+  color: rgb(0, 113, 133);
+}
+
+.lbl-one:hover {
+  color: red;
+}

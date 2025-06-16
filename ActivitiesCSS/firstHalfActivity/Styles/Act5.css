@@ -1,0 +1,187 @@
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  font-size: 14px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 70px;
+  cursor: pointer;
+}
+
+.second-1 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.second-2 {
+  display: block;
+  font-family: Arial;
+  font-size: 14px;
+  color: rgb(248, 55, 55);
+  margin-bottom: 50px;
+}
+
+.third-1 {
+  font-family: Verdana;
+  font-size: 18px;
+  margin-bottom: 3px;
+}
+
+.third-2 {
+  font-family: Verdana;
+  color: grey;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.third-3 {
+  font-family: Verdana;
+  font-size: 12px;
+  margin-bottom: 20px;
+  width: 210;
+}
+
+.four-1 {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.four-2 {
+  font-family: Arial;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.four-3 {
+  font-family: Arial;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(55, 103, 204);
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+
+.spa-1 {
+  margin-right: 1px;
+  transition: margin-right 0.5s, text-decoration 3.6s;
+}
+
+.spa-1:hover {
+  text-decoration: underline;
+  margin-right: 7px;
+}
+
+.lbl-mac1 {
+  font-size: 11px;
+  font-family: Arial;
+  color: rgb(221, 111, 14);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.lbl-mac2 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14.9px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.lbl-mac3 {
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.lbl-mac4 {
+  font-family: Arial;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.btn-mac {
+  background-color: rgb(63, 116, 214);
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto; /* Centers the button horizontally */
+  margin-bottom: 120px; /* Space below button */
+}
+
+.lbl-1 {
+  font-size: 25px;
+  font-family: Arial;
+  margin-bottom: 5px;
+}
+
+.lbl-usd {
+  font-size: 12px;
+  color: grey;
+  margin-left: 2px;
+}
+
+.lbl-2 {
+  font-size: 13.7px;
+  color: green;
+  margin-bottom: 4px;
+}
+
+.lbl-3 {
+  font-size: 14px;
+  color: grey;
+  margin-bottom: 90px;
+}
+
+.lbl-4 {
+  color: red;
+}
+
+.lbl-free1 {
+  font-family: Arial;
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.lbl-email {
+  color: rgb(116, 116, 116);
+  font-weight: normal;
+  margin-left: 2px;
+}
+
+.lbl-free2 {
+  font-size: 14px;
+  font-family: Arial;
+  width: 490px;
+  margin-bottom: 14px;
+}
+
+.lbl-free3 {
+  font-family: Arial;
+  font-size: 14px;
+}
+
+.mention {
+  color: rgb(26, 136, 226);
+}

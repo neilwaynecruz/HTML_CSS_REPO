@@ -1,295 +1,93 @@
-<style>
-    p{
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Styles/Act5.css">
+        <title>Act5</title>
+    </head>
+    <body>
+        <p class="second-1">
+            Biggest Deals of the Year!
+        </p>
 
-    button{
-        background-color: green;
-        color: white;
-        font-size: 14px;
-        padding: 8px 15px;
-        border: none;
-        border-radius: 5px;
-        margin-bottom: 70px;
-        cursor: pointer;
-    }
+        <p class="second-2">
+            Sales end Tuesday
+        </p>
 
-    
-    .second-1{
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 18px;
-        margin-bottom: 4px;
-    }
+        <p class="third-1">
+            HTML CSS COURSE
+        </p>
 
-    .second-2{
-        display: block;
-        font-family: Arial;
-        font-size: 14px;
-        color: rgb(248, 55, 55);
-        margin-bottom: 50px;
-    }
+        <p class="third-2">
+            Beginner to Pro
+        </p>
 
-    .third-1{
-        font-family: Verdana;
-        font-size: 18px;
-        margin-bottom: 3px;
-    }
+        <p class="third-3">
+            In this course, we'll learn the skills you need to become
+            a developer.
+        </p>
 
-    .third-2{
-        font-family: Verdana;
-        color: grey;
-        font-size: 12px;
-        margin-bottom: 20px;
-    }
+        <button>
+            Get Started
+        </button>
 
-    .third-3{
-        font-family: Verdana;
-        font-size: 12px;
-        margin-bottom: 20px;
-        width: 210;
-    }
+        <p class="four-1">
+            Shopping for your business?
 
-    .four-1{
-        font-family: Arial;
-        font-size: 20px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 15px;
-    }
+            <p class="four-2">
+                See how Apple at Work can help.
+            </p>
 
-    .four-2{
-        font-family: Arial;
-        font-size: 14px;
-        text-align: center;
-        margin-bottom: 15px;
-    }
+            <p class="four-3">
+                <span class="spa-1">Learn more</span> &gt;
+            </p>
+        </p>
 
-    .four-3{
-        font-family: Arial;
-        font-size: 14px;
-        text-align: center;
-        margin-bottom: 20px;
-        color: rgb(55, 103, 204);
-        cursor: pointer;
-        margin-bottom: 70px;
-    }
+        <p class="lbl-mac1">
+            New
 
-    .spa-1{
-        margin-right: 1px;
-        transition: margin-right 0.5s,  text-decoration 3.6s;
-    }
+            <p class="lbl-mac2">
+                MacBook Pro
+            </p>
 
-    .spa-1:hover{
-        text-decoration: underline;
-        margin-right: 7px;
-    }
+            <p class="lbl-mac3">
+                Supercharged for pros.
+            </p>
 
-    .lbl-mac1{
-        font-size: 11px;
-        font-family: Arial;
-        color: rgb(221, 111, 14);
-        text-align: center;
-        margin-bottom: 5px;
-    }
+            <p class="lbl-mac4">
+                From $1999
+            </p>
 
-    .lbl-mac2{
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 14.9px;
-        text-align: center;
-        margin-bottom: 5px;
-    }
+            <button class="btn-mac">
+                Buy
+            </button>
+        </p>
 
-    .lbl-mac3{
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 20px;
-        text-align: center;
-        margin-bottom: 7px;
-    }
+        <p>
+            <p class="lbl-1">
+                1,049.61
+                <span class="lbl-usd">USD</span>
+            </p>
 
-    .lbl-mac4{
-        font-family: Arial;
-        font-size: 13px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
+            <p class="lbl-2">
+                +18.05 (1.75%) today
+            </p>
 
-    .btn-mac{
-        background-color: rgb(63, 116, 214);
-        color: white;
-        font-weight: bold;
-        font-size: 12px;
-        border: none;
-        border-radius: 20px;
-        padding: 5px 10px;
-        cursor: pointer;
-        display: block;
-        margin: 0 auto; /* Centers the button horizontally */
-        margin-bottom: 120px; /* Space below button */
-    }
+            <p class="lbl-3">
+                After hours 1,048.00
+                <span class="lbl-4"> - 1.61 (0.15%)</span>
+            </p>
+        </p>
 
-    .lbl-1{
-        font-size: 25px;
-        font-family: Arial;
-        margin-bottom: 5px;
-    }
+        <p>
+            <p class="lbl-free1">
+                freeCodeCamp.org
+                <span class="lbl-email">@freeCodeCamp 1h</span>
+            </p>
 
-    .lbl-usd{
-        font-size: 12px;
-        color: grey;
-        margin-left: 2px;
-    }
+            <p class="lbl-free2">
+                As a web developer, you'll want to make your projects
+                easy to use and navigate around.
+            </p>
 
-    .lbl-2{
-        font-size: 13.7px;
-        color: green;
-        margin-bottom: 4px;
-    }
-
-    .lbl-3{
-        font-size: 14px;
-        color: grey;
-        margin-bottom: 90px;
-    }
-
-    .lbl-4{
-        color: red;
-    }
-
-    .lbl-free1{
-        font-family: Arial;
-        font-weight: bold;
-        margin-bottom: 7px;
-        font-size: 14px;
-    }
-
-    .lbl-email{
-        color: rgb(116, 116, 116);
-        font-weight: normal;
-        margin-left: 2px;
-    }
-
-    .lbl-free2{
-        font-size: 14px;
-        font-family: Arial;
-        width: 490px;
-        margin-bottom: 14px;
-    }
-
-    .lbl-free3{
-        font-family: Arial;
-        font-size: 14px;
-    }
-
-    .mention{
-        color: rgb(26, 136, 226);
-    }
-
-</style>
-
-<p style="font-weight: bold; font-family: Tahoma; margin-bottom: 50px;">
-    This is Tahoma Font
-</p>
-
-
-<p class="second-1">
-    Biggest Deals of the Year!
-</p>
-
-<p class="second-2">
-    Sales end Tuesday
-</p>
-
-
-
-<p class="third-1">
-    HTML CSS COURSE
-</p>
-
-<p class="third-2">
-    Beginner to Pro
-</p>
-
-<p class="third-3">
-    In this course, we'll learn the skills you need to become
-    a developer.
-</p>
-
-<button>
-    Get Started
-</button>
-
-
-<p class="four-1">
-
-    Shopping for your business?
-
-    <p class="four-2">
-        See how Apple at Work can help.
-    </p>
-
-    <p class="four-3">
-        <span class="spa-1">Learn more</span> &gt;
-    </p>
-</p>
-
-
-
-<p class="lbl-mac1">
-    New
-
-    <p class="lbl-mac2">
-        MacBook Pro
-    </p>
-
-    <p class="lbl-mac3">
-        Supercharged for pros.
-    </p>
-
-    <p class="lbl-mac4">
-        From $1999
-    </p>
-
-    <button class="btn-mac">
-        Buy
-    </button>
-
-
-</p>
-
-
-
-<p>
-    <p class="lbl-1">
-        1,049.61
-        <span class="lbl-usd">USD</span>
-    </p>
-
-    <p class ="lbl-2">
-        +18.05 (1.75%) today
-    </p>
-
-    <p class ="lbl-3">
-        After hours 1,048.00<span class=lbl-4> - 1.61 (0.15%)</span>
-    </p>
-</p>
-
-<p>
-    <p class="lbl-free1">
-        freeCodeCamp.org
-        <span class="lbl-email">@freeCodeCamp 1h</span>
-    </p>
-
-    <p class ="lbl-free2">
-        As a web developer, you'll want to make your projects
-        easy to use and navigate around.
-    </p>
-
-    <p class ="lbl-free3">
-        Here <span class="mention">@chp_it</span> outlines the top skills new developers
-        should have.
-    </p>
-</p>
+            <p class="lbl-free3">
+                Here <span class="mention">@chp_it</span> outlines the top skills new

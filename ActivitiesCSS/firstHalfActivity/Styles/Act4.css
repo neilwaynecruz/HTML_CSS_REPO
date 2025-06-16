@@ -1,0 +1,63 @@
+.btn-back {
+  padding: 5px 7px;
+  vertical-align: baseline;
+  margin: 7px;
+}
+
+.link-1 {
+  margin: 3px;
+}
+
+.btn-Shadow {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 5px 10px;
+  vertical-align: baseline;
+  margin: 7px;
+  box-shadow: 2px 2.9px 3.5px rgba(0, 0, 0, 0.418);
+  transition: box-shadow 0.15s, padding 0.15s;
+}
+
+.btn-Shadow:active {
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  padding: 6px 11.5px;
+}
+
+.btn-stretch {
+  color: white;
+  background-color: green;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin: 7px;
+  transition: padding 0.7s;
+}
+
+.btn-stretch:hover {
+  padding: 10px 25px;
+}
+
+.btn-margin-padding {
+  color: white;
+  background-color: green;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: padding 0.15s, margin 0.15s;
+}
+
+.btn-margin-padding:hover {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
