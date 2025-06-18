@@ -1,0 +1,19 @@
+.parag-1 {
+  font-family: Montserrat;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.parag-2 {
+  font-family: Montserrat;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.parag-2-1 {
+  cursor: pointer;
+  text-decoration: underline;
+}
