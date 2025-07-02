@@ -1,0 +1,21 @@
+.picture-1 {
+  width: 420px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.text-field1 {
+  padding: 4px 4px 4px 4px;
+  border-color: grey;
+  border-radius: 2px;
+  border-width: 1px;
+  outline: none;
+  border-style: solid;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.video-title {
+  width: 300px;
+}
