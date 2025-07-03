@@ -1,5 +1,5 @@
 .picture-1 {
-  width: 420px;
+  width: 360px;
   margin-bottom: 20px;
   display: block;
 }
@@ -14,8 +14,16 @@
   font-size: 12px;
   font-family: Arial, sans-serif;
   margin-bottom: 20px;
+  display: block;
 }
 
 .video-title {
   width: 300px;
+}
+
+.video-preview {
+  width: 300px;
+  display: inline-block;
+  margin-right: 70px;
+  vertical-align: top;
 }
