@@ -1,0 +1,111 @@
+.first-name {
+  border-color: rgb(186, 184, 184);
+  border-radius: 6px;
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  padding: 9px 0px 9px 0px;
+  width: 120px;
+  text-indent: 13px;
+}
+
+.last-name {
+  border-color: rgb(186, 184, 184);
+  border-radius: 6px;
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  padding: 9px 0px 9px 0px;
+  width: 120px;
+  text-indent: 13px;
+}
+.email {
+  border-color: rgb(186, 184, 184);
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  outline: none;
+  margin: 10px 0px 11px 0px;
+  padding: 9px 0px 9px 0px;
+  width: 245px;
+  text-indent: 13px;
+  display: block;
+}
+
+.btn-signup {
+  border: none;
+  border-radius: 6px;
+  width: 245px;
+  padding: 10px 0px 10px 0px;
+  background-color: rgb(45, 102, 223);
+  color: white;
+  font-weight: bold;
+  display: block;
+  transition: background-color 0.15s ease;
+}
+
+.btn-signup:hover {
+  background-color: rgb(85, 132, 234);
+}
+
+.text-1 {
+  font-family: Arial;
+  font-size: 33px;
+  margin: 0px 0px 27px 0px;
+}
+
+.pickup-loc {
+  border: none;
+  outline: none;
+  background-color: rgba(229, 228, 228, 0.647);
+  width: 363px;
+  padding: 12px 3px 12px 3px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  text-indent: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(85, 85, 85);
+  display: block;
+}
+
+.place-destination {
+  border: none;
+  outline: none;
+  background-color: rgba(229, 228, 228, 0.647);
+  width: 363px;
+  padding: 12px 3px 12px 3px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  text-indent: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(85, 85, 85);
+  display: block;
+}
+
+.btn-uber1 {
+  padding: 8px 10px 8px 10px;
+  font-size: 11px;
+  margin-right: 8px;
+  border: none;
+  color: white;
+  background-color: black;
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.btn-uber1:hover {
+  background-color: rgb(29, 29, 29);
+}
+
+.btn-uber2 {
+  padding: 8px 10px 8px 10px;
+  font-size: 10px;
+  border: none;
+  background-color: rgb(227, 226, 226);
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+}
+
+.btn-uber2:hover {
+  background-color: rgb(196, 196, 196);
+}
