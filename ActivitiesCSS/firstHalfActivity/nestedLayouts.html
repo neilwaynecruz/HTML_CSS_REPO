@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nested Layouts</title>
+    <style>
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px 0px 0px 0px;
+      }
+
+      .user-profile-card {
+        display: block;
+        margin: 0px 0px 0px 0px;
+      }
+
+      .user-image-icon {
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 30px;
+        margin-left: 80px;
+      }
+      .Image-icon-1 {
+        width: 87px;
+        height: 87px;
+        border-radius: 50%;
+        border: none;
+        object-fit: cover;
+        object-position: 20% 10%;
+        vertical-align: middle;
+      }
+
+      .user-info {
+        display: inline-block;
+        vertical-align: middle;
+        width: 220px;
+      }
+
+      .Username {
+        display: inline-block;
+        font-size: 23px;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      .user-bio {
+        font-size: 16px;
+        color: rgb(134, 134, 134);
+        margin-top: 2px;
+        margin-bottom: 8px;
+      }
+
+      .user-status {
+        font-size: 16px;
+        color: rgb(134, 134, 134);
+      }
+
+      .Follow-btn {
+        padding: 10px 15px;
+        background-color: #4297f1;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        transition: background-color 0.2s ease;
+      }
+
+      .Follow-btn:hover {
+        background-color: #73adff;
+      }
+
+      .Button-div {
+        display: inline-block;
+        vertical-align: -3px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- FIRST CARD -->
+    <div class="user-profile-card">
+      <div class="user-image-icon">
+        <img class="Image-icon-1" src="/thumbnails/golden.jpg" alt="" />
+      </div>
+      <div class="user-info">
+        <p class="Username">Wayne</p>
+        <p class="user-bio">The Pogi</p>
+        <p class="user-status">Popular</p>
+      </div>
+      <div class="Button-div"><button class="Follow-btn">Follow</button></div>
+    </div>
+
+    <!-- SECOND CARD -->
+    <div class="user-profile-card">
+      <div class="user-image-icon">
+        <img class="Image-icon-1" src="/thumbnails/winty.jpg" alt="" />
+      </div>
+      <div class="user-info">
+        <p class="Username">Winty</p>
+        <p class="user-bio">The Doggie</p>
+        <p class="user-status">Ganda</p>
+      </div>
+      <div class="Button-div"><button class="Follow-btn">Follow</button></div>
+    </div>
+
+    <!-- THIRD CARD -->
+    <div class="user-profile-card">
+      <div class="user-image-icon">
+        <img class="Image-icon-1" src="/thumbnails/husky.webp" alt="" />
+      </div>
+      <div class="user-info">
+        <p class="Username">Nathan</p>
+        <p class="user-bio">The Geng-Geng</p>
+        <p class="user-status">Mafia Boss</p>
+      </div>
+      <div class="Button-div"><button class="Follow-btn">Follow</button></div>
+    </div>
+
+    <!-- FOURTH CARD -->
+    <div class="user-profile-card">
+      <div class="user-image-icon">
+        <img class="Image-icon-1" src="/thumbnails/golden.jpg" alt="" />
+      </div>
+      <div class="user-info">
+        <p class="Username">Norman</p>
+        <p class="user-bio">The Panot</p>
+        <p class="user-status">Panoskie</p>
+      </div>
+      <div class="Button-div"><button class="Follow-btn">Follow</button></div>
+    </div>
+
+    <!-- FIFTH CARD -->
+    <div class="user-profile-card">
+      <div class="user-image-icon">
+        <img class="Image-icon-1" src="/thumbnails/dragon.jpg" alt="" />
+      </div>
+      <div class="user-info">
+        <p class="Username">Wendy</p>
+        <p class="user-bio">The Dragon</p>
+        <p class="user-status">Dragon</p>
+      </div>
+      <div class="Button-div"><button class="Follow-btn">Follow</button></div>
+    </div>
+  </body>
+</html>
