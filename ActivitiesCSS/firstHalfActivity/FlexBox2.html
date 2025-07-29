@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FlexBox2</title>
+  </head>
+
+  <body>
+    <div
+      style="
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          background-color: lightpink;
+          width: 100px;
+          display: flex;
+          justify-content: center;
+        "
+      >
+        <p style="color: white; background-color: black">item1</p>
+      </div>
+      <div style="background-color: lightblue; width: 200px"></div>
+    </div>
+
+    <div style="display: flex; flex-direction: row; margin-left: 30px">
+      <div style="background-color: lightpink; width: 100px"></div>
+      <div
+        style="
+          background-color: lightblue;
+          width: 200px;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <p style="margin: 0px 0px 0px 0px">row1</p>
+        <div style="display: flex; flex-direction: row">
+          <p style="margin-top: 0px; background-color: black; color: white">
+            row2
+          </p>
+          <p
+            style="
+              margin-top: 0px;
+              margin-left: 134px;
+              background-color: black;
+              color: white;
+            "
+          >
+            row2
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
