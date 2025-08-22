@@ -11,3 +11,8 @@ body {
   padding-right: 24px;
   background-color: rgb(249, 249, 249);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

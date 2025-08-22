@@ -11,6 +11,7 @@
 }
 
 .video-info-grid {
+  position: relative;
   display: grid;
   grid-template-columns: 50px 1fr;
 }
@@ -54,4 +55,24 @@
   right: 5px;
   padding: 4px 4px;
   border-radius: 2px;
+}
+
+.channel-picture .channel-picture-tooltip {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: Roboto, Arial;
+  bottom: -25px;
+  opacity: 0;
+  transition: opacity 0.15s ease-in-out;
+  pointer-events: none;
+  text-wrap: nowrap;
+  z-index: 100;
+}
+
+.channel-picture:hover .channel-picture-tooltip {
+  opacity: 1;
 }
