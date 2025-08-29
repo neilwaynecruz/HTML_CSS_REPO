@@ -58,21 +58,51 @@
 }
 
 .channel-picture .channel-picture-tooltip {
+  display: flex;
+  flex-direction: row;
   position: absolute;
   background-color: rgb(255, 255, 255);
   color: white;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 20px 10px 15px;
   border-radius: 4px;
   font-size: 12px;
   font-family: Roboto, Arial;
-  bottom: -25px;
+  top: 50px;
+  left: 3px;
   opacity: 0;
   transition: opacity 0.15s ease-in-out;
   pointer-events: none;
   text-wrap: nowrap;
   z-index: 100;
+  box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.2);
 }
 
 .channel-picture:hover .channel-picture-tooltip {
   opacity: 1;
+}
+
+.tooltip-thumbnail {
+  width: 40px;
+  border-radius: 50%;
+  margin-top: 2px;
+}
+.tooltip-box-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.tooltip-info-name {
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 7px;
+  margin-top: 3px;
+}
+.tooltip-info-subs {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+  margin-left: 7px;
+  margin-top: 2px;
 }
