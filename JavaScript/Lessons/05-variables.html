@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Variables</title>
+    <style></style>
+  </head>
+  <body>
+    <p>Variables</p>
+
+    <!-- for javascript -->
+    <script>
+      // variables
+      let name = "Neil Wayne"; // let is a variable declaration keyword in JavaScript
+      let age = 20; // number
+      let isStudent = true; // boolean
+      let grade; // undefined
+      let gpa = 1.25; // float
+
+      // printing variables to the console
+      console.log(name);
+      console.log(age);
+      console.log(isStudent);
+      console.log(gpa);
+      console.log(grade); // undefined
+
+      // calculations with variables
+      let calculation1 = 20 + 5; // addition
+      console.log(calculation1 + 5); // 30
+
+      let result = calculation1 + 2; // 27
+      console.log(result); // 27
+
+      // updating variable values / reassignment
+      name = "John Doe"; // updating the value of name variable
+      age = 24;
+      result = 0;
+
+      console.log(name); // John Doe
+      console.log(age); // 24
+      console.log(result); // 0
+
+      // variable naming conventions
+      let firstName = "Neil"; // camelCase
+      let last_name = "Wayne"; // snake_case
+      let $city = "New York"; // dollar sign
+      let _country = "USA"; // underscore
+      // let 1stPlace = "Gold"; // invalid - cannot start with a number
+      // let my-name = "Invalid"; // invalid - cannot contain hyphen or any special character except $ and _
+      // let my name = "Invalid"; // invalid - cannot contain spaces
+
+      age += 1; // increment age by 1 short form of age = age + 1
+      console.log(age); // 25
+
+      // const
+      const pi = 3.14; // constant variable - cannot be reassigned
+      console.log(pi);
+
+      // var
+      var country = "USA"; // older way of declaring variables - avoid using var in modern JavaScript
+      console.log(country);
+
+      // typeof
+      console.log(typeof name); // string
+      console.log(typeof age); // number
+      console.log(typeof isStudent); // boolean
+    </script>
+  </body>
+</html>
