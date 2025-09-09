@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+    <style></style>
+  </head>
+  <body>
+    <p>Rock Paper Scissors</p>
+
+    <!-- FOR ROCK -->
+    <button
+      onclick="{
+    let computerMove = '';
+    const randomNumber = Math.floor(Math.random() * 3) + 1;
+
+    if (randomNumber === 1) {
+      computerMove = 'rock';
+    } else if (randomNumber === 2) {
+      computerMove = 'paper';
+    } else {
+      computerMove = 'scissors';
+    }
+
+    const message = `You chose rock. The Computer chose ${computerMove}.`;
+
+    if(computerMove === 'rock') {
+        alert(`${message} It's a Tie!`);
+    } else if (computerMove === 'paper') {
+        alert(`${message} You Lose!`);
+    } else {
+        alert(`${message} You Win!`);
+    }
+
+}"
+    >
+      Rock
+    </button>
+
+    <!-- FOR PAPER -->
+    <button
+      onclick="{
+    let computerMove = '';
+    const randomNumber = Math.floor(Math.random() * 3) + 1;
+
+    if (randomNumber === 1) {
+      computerMove = 'rock';
+    } else if (randomNumber === 2) {
+      computerMove = 'paper';
+    } else {
+      computerMove = 'scissors';
+    }
+
+    const message = `You chose paper. The Computer chose ${computerMove}.`;
+
+    if(computerMove === 'rock') {
+        alert(`${message} You Win!`);
+    } else if (computerMove === 'paper') {
+        alert(`${message} It's a Tie!`);
+    } else {
+        alert(`${message} You Lose!`);
+    }
+
+}"
+    >
+      Paper
+    </button>
+
+    <!-- FOR SCISSORS -->
+
+    <button
+      onclick="{
+    let computerMove = '';
+    const randomNumber = Math.floor(Math.random() * 3) + 1;
+
+    if (randomNumber === 1) {
+      computerMove = 'rock';
+    } else if (randomNumber === 2) {
+      computerMove = 'paper';
+    } else {
+      computerMove = 'scissors';
+    }
+
+    const message = `You chose scissors. The Computer chose ${computerMove}.`;
+
+    if(computerMove === 'rock') {
+        alert(`${message} You Lose!`);
+    } else if (computerMove === 'paper') {
+        alert(`${message} You Win!`);
+    } else {
+        alert(`${message} It's a Tie!`);
+    }
+
+}"
+    >
+      Scissors
+    </button>
+  </body>
+</html>

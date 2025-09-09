@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Booleans and If Statements</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      // operators
+
+      //comparison operators
+      // == equal to
+      // != not equal to
+      // > greater than
+      // < less than
+      // >= greater than or equal to
+      // <= less than or equal to
+      // === strictly equal to
+      // !== strictly not equal to
+
+      // the difference between == and === is that == checks for value equality
+
+      // while === checks for both value and type equality
+
+      // logical operators
+      // && and
+      // || or
+      // ! not
+
+      // boolean values
+      // true
+      // false
+
+      // math operators
+
+      //   console.log(typeof true);
+      //   console.log(typeof false);
+
+      //   console.log(3 == 5);
+      //   console.log(5 === 5.0);
+
+      // if statements
+
+      //   const age = 18;
+
+      //   if (age >= 18) {
+      //     console.log("You are an adult.");
+      //   } else {
+      //     console.log("You are a minor.");
+      //   }
+
+      //   // with else if
+      //   const time = 19;
+      //   if (time < 12) {
+      //     console.log("Good morning!");
+      //   } else if (time < 18) {
+      //     console.log("Good afternoon!");
+      //   } else {
+      //     console.log("Good evening!");
+      //   }
+
+      // truthy and falsy values
+      // falsy values: false, 0, "", null, undefined, NaN
+      // truthy values: true, any non-zero number, any non-empty string, any object, any array
+
+      //   console.log(0); // falsy
+      //   console.log(""); // falsy
+      //   console.log(null); // falsy
+      //   console.log(undefined); // falsy
+      //   console.log(NaN); // falsy
+
+      //   console.log(1); // truthy
+      //   console.log("hello"); // truthy
+      //   console.log([]); // truthy
+      //   console.log({}); // truthy
+      //   console.log(function () {}); // truthy
+      //   console.log(-1); // truthy
+
+      // ternatary operator
+
+      const age2 = 20;
+      const isAdult = age2 >= 18 ? "You are an adult." : "You are a minor.";
+      console.log(isAdult);
+
+      // guard operator &&
+      const message = 5 && "Aray kohh!";
+      console.log(message);
+
+      // Default operator ||
+      const username = "PHP" || "USD";
+      console.log(username);
+    </script>
+  </body>
+</html>
