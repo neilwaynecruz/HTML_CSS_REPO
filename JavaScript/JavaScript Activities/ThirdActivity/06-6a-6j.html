@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      // for time of day greeting
+      const hour = 14;
+      const name = "Wayne";
+
+      if (hour >= 6 && hour <= 12) {
+        console.log(`Good Morning, ${name}`);
+      } else if (hour >= 13 && hour <= 17) {
+        console.log(`Good Afternoon, ${name}`);
+      } else {
+        console.log(`Good night, ${name}`);
+      }
+
+      // Amusement park discount
+      const age = 70;
+      const isHoliday = false;
+      if (((age >= 0 && age <= 6) || age >= 65) && !isHoliday) {
+        console.log("Discounted Ticket");
+      } else {
+        console.log("Not discounted, full price ticket");
+      }
+
+      // head or tails using random number (Math.random())
+
+      const randNumber = Math.random();
+      const result = randNumber < 0.5 ? "heads" : "tails";
+      const guess = "tails";
+
+      console.log(`}`);
+
+      console.log(
+        guess.toLowerCase() === result
+          ? `The flip was ${result}, YOU WON!!`
+          : `The flip was ${result}, YOU LOST! TRY AGAIN!`
+      );
+    </script>
+  </body>
+</html>

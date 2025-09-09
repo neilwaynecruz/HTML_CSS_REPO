@@ -16,8 +16,12 @@
 
     <button
       onclick="
-      cartQuantity += 1; 
-      console.log(`Cart quantity: ${cartQuantity}`);
+      if (cartQuantity + 1 >10){
+        alert('You have reached the MAXIMUM quantity of 10 items in your cart.');
+      } else {
+        cartQuantity += 1; 
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
       "
     >
       Add to Cart
@@ -25,8 +29,12 @@
 
     <button
       onclick="
-      cartQuantity += 2; 
-      console.log(`Cart quantity: ${cartQuantity}`);
+      if (cartQuantity + 2 >10){
+        alert('You have reached the MAXIMUM quantity of 10 items in your cart.');
+      } else {
+        cartQuantity += 2; 
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
       "
     >
       +2
@@ -34,32 +42,51 @@
 
     <button
       onclick="
-      cartQuantity += 3; 
-      console.log(`Cart quantity: ${cartQuantity}`);"
+      if (cartQuantity + 3 >10){
+        alert('You have reached the MAXIMUM quantity of 10 items in your cart.');
+      } else {
+        cartQuantity += 3; 
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }"
     >
       +3
     </button>
 
     <button
       onclick="
-      cartQuantity += 4; 
-      console.log(`Cart quantity: ${cartQuantity}`);"
+      if (cartQuantity + 4 >10){
+        alert('You have reached the MAXIMUM quantity of 10 items in your cart.');
+      } else {
+        cartQuantity += 4; 
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
+      "
     >
       +4
     </button>
 
     <button
       onclick="
-      cartQuantity += 5; 
-      console.log(`Cart quantity: ${cartQuantity}`);"
+
+      if (cartQuantity + 5 >10){
+        alert('You have reached the MAXIMUM quantity of 10 items in your cart.');
+      } else {
+        cartQuantity += 5; 
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
+      "
     >
       +5
     </button>
 
     <button
       onclick="
-      cartQuantity--; 
-      console.log(`Cart quantity: ${cartQuantity}`);
+      if (cartQuantity - 1 < 0){
+        alert('NOT ENOUGH items in cart to remove');
+      } else {
+        cartQuantity -= 1; 
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
       "
     >
       Remove from cart
@@ -67,8 +94,12 @@
 
     <button
       onclick="
-      cartQuantity -=2; 
-      console.log(`Cart quantity: ${cartQuantity}`);
+      if (cartQuantity - 2 < 0){
+        alert('NOT ENOUGH items in cart to remove');
+      } else {
+        cartQuantity -= 2; 
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
       "
     >
       -2
@@ -76,8 +107,12 @@
 
     <button
       onclick="
-      cartQuantity -=3; 
-      console.log(`Cart quantity: ${cartQuantity}`);
+      if (cartQuantity - 3 < 0){
+        alert('NOT ENOUGH items in cart to remove');
+      } else {
+        cartQuantity -= 3; 
+        console.log(`Cart quantity: ${cartQuantity}`);
+      }
       "
     >
       -3
