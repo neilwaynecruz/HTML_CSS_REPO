@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>activity 7a to 7l</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      function greet(name) {
+        // greeting functiom
+        if (name === undefined) {
+          console.log("Hello there!");
+        } else {
+          console.log(`Hello ${name}!`);
+        }
+      }
+
+      function convertToFahrenheit(temp_celcius) {
+        // function to convert fahrenheit to celcius
+        return (temp_celcius * 9) / 5 + 32;
+      }
+
+      function convertToCelcius(temp_fahrenheit) {
+        // function to convert celcius to fahrenheit
+        return ((temp_fahrenheit - 32) * 5) / 9;
+      }
+
+      function convertTemperature(degree, unit) {
+        return `${degree}${unit}`;
+      }
+
+      function convertLength(length, from, to) {
+        if (
+          from != "m" &&
+          from != "km" &&
+          from != "ft" &&
+          to != "m" &&
+          to != "km" &&
+          to != "ft"
+        ) {
+          return `Invalid units: ${from}, ${to}`;
+        } else if (to != "m" && to != "km" && to != "ft") {
+          return `Invalid unit: ${to}`;
+        } else if (from != "m" && from != "km" && from != "ft") {
+          return `Invalid unit: ${from}`;
+        }
+
+        if (from === "m" && to === "km") {
+          return ((length * 1000 * 160934) / 1000 / 100000).toFixed(3);
+        }
+
+        if (from === "km" && to === "m") {
+          return ((length * 100000) / 160934).toFixed(3);
+        }
+
+        if (from === "m" && to === "ft") {
+          return ((length * 1000 * 5280) / 1000).toFixed(3);
+        }
+
+        if (from === "km" && to === "ft") {
+          return ((length * 1000 * 3281) / 1000).toFixed(3);
+        }
+
+        if (from === "ft" && to === "m") {
+          return ((length * 1000) / 5280 / 1000).toFixed(3);
+        }
+
+        if (from === "ft" && to === "km") {
+          return ((length * 1000) / 3281 / 1000).toFixed(3);
+        }
+      }
+
+      // 7a to 7c
+      //   greet("Neil");
+      //   greet();
+      //   greet("Wayne");
+
+      // 7d to 7f
+      // console.log(convertTemperature(convertToFahrenheit(25), "F"));
+      // console.log(convertTemperature(convertToCelcius(86), "C"));
+
+      // 7g to 7i
+      console.log("This is m to km: " + convertLength(1, "m", "km"));
+      console.log("This is km to m: " + convertLength(2000, "km", "m"));
+      console.log("This is m to ft: " + convertLength(2, "m", "ft"));
+      console.log("This is km to ft: " + convertLength(2, "km", "ft"));
+      console.log("This is ft to m: " + convertLength(232, "ft", "m"));
+      console.log("This is ft to km: " + convertLength(232, "ft", "km"));
+    </script>
+  </body>
+</html>
