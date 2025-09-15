@@ -7,30 +7,60 @@
   <body>
     <p>Rock Paper Scissors</p>
 
+    <script>
+      function pickComputerMove() {
+        const randomNumber = Math.floor(Math.random() * 3) + 1;
+        let computerMove = "";
+
+        if (randomNumber === 1) {
+          computerMove = "rock";
+        } else if (randomNumber === 2) {
+          computerMove = "paper";
+        } else {
+          computerMove = "scissors";
+        }
+        return computerMove;
+      }
+
+      function playGame(playermove) {
+        computerMove = pickComputerMove();
+        const message = `You chose ${playermove}. The Computer chose ${computerMove}.`;
+        let result = "";
+
+        if (playermove === "rock") {
+          if (computerMove === "rock") {
+            result = "It's a Tie!";
+          } else if (computerMove === "paper") {
+            result = "You Lose!";
+          } else {
+            result = "You Win!";
+          }
+        } else if (playermove === "paper") {
+          if (computerMove === "rock") {
+            result = "You Win!";
+          } else if (computerMove === "paper") {
+            result = "it's a Tie!";
+          } else {
+            result = "You Lose!";
+          }
+        } else {
+          if (computerMove === "rock") {
+            result = "You Lose!";
+          } else if (computerMove === "paper") {
+            result = "You Win!";
+          } else {
+            result = "it's a Tie!";
+          }
+        }
+
+        alert(`${message} ${result}`);
+      }
+    </script>
+
     <!-- FOR ROCK -->
     <button
       onclick="{
-    let computerMove = '';
-    const randomNumber = Math.floor(Math.random() * 3) + 1;
-
-    if (randomNumber === 1) {
-      computerMove = 'rock';
-    } else if (randomNumber === 2) {
-      computerMove = 'paper';
-    } else {
-      computerMove = 'scissors';
-    }
-
-    const message = `You chose rock. The Computer chose ${computerMove}.`;
-
-    if(computerMove === 'rock') {
-        alert(`${message} It's a Tie!`);
-    } else if (computerMove === 'paper') {
-        alert(`${message} You Lose!`);
-    } else {
-        alert(`${message} You Win!`);
-    }
-
+      playGame('rock');
 }"
     >
       Rock
@@ -39,28 +69,8 @@
     <!-- FOR PAPER -->
     <button
       onclick="{
-    let computerMove = '';
-    const randomNumber = Math.floor(Math.random() * 3) + 1;
-
-    if (randomNumber === 1) {
-      computerMove = 'rock';
-    } else if (randomNumber === 2) {
-      computerMove = 'paper';
-    } else {
-      computerMove = 'scissors';
-    }
-
-    const message = `You chose paper. The Computer chose ${computerMove}.`;
-
-    if(computerMove === 'rock') {
-        alert(`${message} You Win!`);
-    } else if (computerMove === 'paper') {
-        alert(`${message} It's a Tie!`);
-    } else {
-        alert(`${message} You Lose!`);
-    }
-
-}"
+      playGame('paper');
+  }"
     >
       Paper
     </button>
@@ -69,28 +79,8 @@
 
     <button
       onclick="{
-    let computerMove = '';
-    const randomNumber = Math.floor(Math.random() * 3) + 1;
-
-    if (randomNumber === 1) {
-      computerMove = 'rock';
-    } else if (randomNumber === 2) {
-      computerMove = 'paper';
-    } else {
-      computerMove = 'scissors';
-    }
-
-    const message = `You chose scissors. The Computer chose ${computerMove}.`;
-
-    if(computerMove === 'rock') {
-        alert(`${message} You Lose!`);
-    } else if (computerMove === 'paper') {
-        alert(`${message} You Win!`);
-    } else {
-        alert(`${message} It's a Tie!`);
-    }
-
-}"
+      playGame('scissors');
+  }"
     >
       Scissors
     </button>
