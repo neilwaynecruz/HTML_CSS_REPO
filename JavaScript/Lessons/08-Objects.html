@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      // this is an object
+      // this is like a dictionary in python a key value pair
+      const product = {
+        name: "socks",
+        price: 1090,
+      };
+
+      console.log(typeof product); // object
+      console.log(product.name);
+      console.log(product.price);
+
+      product.name = "shoes"; // change the name property of the object
+      console.log(product.name);
+
+      product.color = "red"; // add a new property to the object
+      console.log(product);
+
+      delete product.price; // delete a property from the object
+      console.log(product);
+    </script>
+  </body>
+</html>
