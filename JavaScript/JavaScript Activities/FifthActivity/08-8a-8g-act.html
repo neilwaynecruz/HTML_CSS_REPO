@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>8a-8g activity</title>
+  </head>
+  <body>
+    <script>
+      const basketball = {
+        price: 2095,
+      };
+      console.log(basketball.price + 500); // 8a and 8b
+
+      basketball["delivery-time"] = "3 days";
+      console.log(basketball["delivery-time"]); // 8c
+
+      const prod1 = {
+        name: "T-shirt White",
+        price: "600",
+      };
+
+      const prod2 = {
+        name: "T-shirt White",
+        price: "600",
+      };
+
+      console.log(comparePrice(prod1, prod2)); // 8d
+      console.log(isSameProduct(prod1, prod2)); // 8e
+
+      // for 8d
+      function comparePrice(product1, product2) {
+        return product1.price < product2.price ? product1 : product2;
+      }
+
+      // for 8e
+      function isSameProduct(product1, product2) {
+        return product1.name === product2.name &&
+          product1.price === product2.price
+          ? true
+          : false;
+      }
+
+      console.log("Good Morning".toUpperCase()); // 8f convert to all upper case
+      console.log("test".repeat(2)); // 8g repeat word multiple times
+    </script>
+  </body>
+</html>

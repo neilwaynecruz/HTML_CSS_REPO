@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <style></style>
+  </head>
+  <body>
+    <p>Calculator</p>
+
+    <p>
+      <button
+        onclick="
+        updateCalculator('1');
+        "
+      >
+        1
+      </button>
+
+      <button
+        onclick="
+        updateCalculator('2');
+    "
+      >
+        2
+      </button>
+
+      <button
+        onclick="
+        updateCalculator('3');
+    "
+      >
+        3
+      </button>
+
+      <button
+        onclick="
+        updateCalculator(' + ');
+    "
+      >
+        +
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        updateCalculator('4');
+        "
+      >
+        4
+      </button>
+
+      <button
+        onclick="
+        updateCalculator('5');
+    "
+      >
+        5
+      </button>
+
+      <button
+        onclick="
+        updateCalculator('6');
+    "
+      >
+        6
+      </button>
+
+      <button
+        onclick="
+        updateCalculator(' - ');
+    "
+      >
+        -
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        updateCalculator('7');
+        "
+      >
+        7
+      </button>
+
+      <button
+        onclick="
+        updateCalculator('8');
+    "
+      >
+        8
+      </button>
+
+      <button
+        onclick="
+        updateCalculator('9');
+    "
+      >
+        9
+      </button>
+
+      <button
+        onclick="
+        updateCalculator(' * ');
+    "
+      >
+        *
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        updateCalculator('0');
+    "
+      >
+        0
+      </button>
+
+      <button
+        onclick="
+        calculation += '.';
+        console.log(calculation);
+    "
+      >
+        .
+      </button>
+
+      <button
+        onclick="
+        updateCalculator('=');
+    "
+      >
+        =
+      </button>
+
+      <button
+        onclick="
+        updateCalculator(' / ');
+    "
+      >
+        /
+      </button>
+    </p>
+
+    <p>
+      <button
+        onclick="
+        updateCalculator('Clear');
+    "
+      >
+        Clear
+      </button>
+    </p>
+
+    <script>
+      let calculation = JSON.parse(localStorage.getItem("calculation")) || "";
+      // You can add more functionality here if needed
+      function updateCalculator(input) {
+        if (
+          calculation === undefined ||
+          input === null ||
+          input === undefined
+        ) {
+          calculation = "";
+        }
+
+        if (input === "=") {
+          calculation = eval(calculation);
+          console.log(calculation);
+          return;
+        }
+
+        if (input === "Clear") {
+          localStorage.removeItem("calculation");
+          calculation = "";
+          console.log("Cleared.");
+          return;
+        }
+
+        calculation += input;
+        localStorage.setItem("calculation", JSON.stringify(calculation));
+        console.log(calculation);
+      }
+    </script>
+  </body>
+</html>
