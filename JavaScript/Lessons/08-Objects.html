@@ -8,23 +8,93 @@
     <script>
       // this is an object
       // this is like a dictionary in python a key value pair
-      const product = {
-        name: "socks",
-        price: 1090,
+      // const product = {
+      //   name: "socks",
+      //   price: 1090,
+      // };
+
+      // console.log(typeof product); // object
+      // console.log(product.name);
+      // console.log(product.price);
+
+      // product.name = "shoes"; // change the name property of the object
+      // console.log(product.name);
+
+      // product.color = "red"; // add a new property to the object
+      // console.log(product);
+
+      // delete product.price; // delete a property from the object
+      // console.log(product);
+
+      // const product2 = {
+      //   name: "shirt",
+      //   price: 1590,
+      //   sizes: ["S", "M", "L", "XL"],
+      //   "delivery-available": "10 days", // property name with hyphen must be in quotes
+      //   rating: {
+      //     rate: 4.5,
+      //     count: 10,
+      //   },
+      //   func: function function1() {
+      //     console.log("This is a function inside an object");
+      //   },
+      // };
+
+      // console.log(product2["price"]); // this is another way to access properties of an object
+      // console.log(product2["delivery-available"]); // this is another way to access properties of an object
+      // console.log(product2.rating.count); // access nested object property
+      // product2.func();
+
+      // // built-in objects (JSON)
+      // console.log(JSON.stringify(product2));
+      // // JSON to javascript object
+      // const jsonString = JSON.stringify(product2);
+      // console.log(JSON.parse(jsonString));
+
+      // // local storage - used to store data in the browser
+      // localStorage.setItem("myProduct", jsonString);
+      // const storedProductString = localStorage.getItem("myProduct");
+      // const storedProduct = JSON.parse(storedProductString);
+      // console.log(storedProduct);
+
+      // methods
+      console.log("hello".length); // 5
+      console.log("hello world".toUpperCase()); // HELLO WORLD
+      console.log("HELLO WORLD".toLowerCase()); // hello world
+      console.log("   hello   ".trim()); // 'hello'
+      console.log("hello world".includes("world")); // true
+      console.log("hello world".replace("world", "there")); // hello there
+      console.log("hello world".slice(0, 5)); // hello
+      console.log("hello world".indexOf("o")); // 4
+
+      // shortcuts for creating objects
+
+      const object1 = {
+        message: "hello",
+        price: 100,
+      };
+      // destructuring assignment - this is a way to extract properties from an object into variables with the same name
+      const { message: msg, price: PHP } = object1; // msg is the variable name
+      //or
+      const { message, price } = object1; // message and price are the variable names
+
+      console.log(msg); // hello
+      console.log(PHP); // 100
+
+      // shorthand property and shorthand method
+      const object2 = {
+        // message: message,
+        message, // shorthand property
+        // method: function function1(){
+        //   console.log("This is a method inside an object");
+        // }
+        method() {
+          console.log("This is a method inside an object");
+        }, // shorthand method
       };
 
-      console.log(typeof product); // object
-      console.log(product.name);
-      console.log(product.price);
-
-      product.name = "shoes"; // change the name property of the object
-      console.log(product.name);
-
-      product.color = "red"; // add a new property to the object
-      console.log(product);
-
-      delete product.price; // delete a property from the object
-      console.log(product);
+      console.log(object2); // hello
+      object2.method(); // This is a method inside an object
     </script>
   </body>
 </html>
