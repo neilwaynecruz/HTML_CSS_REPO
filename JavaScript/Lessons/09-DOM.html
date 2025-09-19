@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button class="js-btn">Bro</button>
+
+    <script>
+      // DOM - Document Object Model it is used to manipulate the HTML document using JavaScript
+
+      console.log(document.querySelector("button").innerHTML); // this will print the inner HTML of the button
+      document.querySelector("button").innerHTML = "Click Me";
+
+      const buttonElement = document.querySelector(".js-btn");
+
+      console.log(buttonElement); // this will print the inner HTML of the button
+
+      //   console.log(document.title); // this will print the title of the page
+      //   console.log(document.body); // this will print the body of the page
+
+      //   console.log(typeof document.body); // this will print the type of the body of the page
+      //   console.log(document.body.innerHTML); // this will print the inner HTML of the body of the page
+      //   document.body.innerHTML += "<h1>Good Morning</h1>"; // this will add a h1 tag to the body of the page
+
+      //   document.body.innerHTML = "asd"; // this will replace everything in the body
+      //   document.title = "GODD MORNENG"; // this will change the title of the page
+    </script>
+  </body>
+</html>
