@@ -6,13 +6,58 @@
   </head>
   <body>
     <p>Rock Paper Scissors</p>
+    <!-- FOR ROCK -->
+    <button
+      onclick="{
+      playGame('rock');
+}"
+    >
+      Rock
+    </button>
+
+    <!-- FOR PAPER -->
+    <button
+      onclick="{
+      playGame('paper');
+  }"
+    >
+      Papers
+    </button>
+
+    <!-- FOR SCISSORS -->
+
+    <button
+      onclick="{
+      playGame('scissors');
+  }"
+    >
+      Scissors
+    </button>
+
+    <p class="js-score"></p>
+
+    <button
+      onclick="
+      localStorage.removeItem('score');
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+    alert('Score has been reset.');
+    "
+    >
+      Reset Score
+    </button>
 
     <script>
-      const score = JSON.parse(localStorage.getItem("score")) || {
+      let score = JSON.parse(localStorage.getItem("score")) || {
         wins: 0,
         losses: 0,
         ties: 0,
       };
+
+      document.querySelector(
+        ".js-score"
+      ).innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
 
       function pickComputerMove() {
         const randomNumber = Math.floor(Math.random() * 3) + 1;
@@ -74,45 +119,5 @@
         );
       }
     </script>
-
-    <!-- FOR ROCK -->
-    <button
-      onclick="{
-      playGame('rock');
-}"
-    >
-      Rock
-    </button>
-
-    <!-- FOR PAPER -->
-    <button
-      onclick="{
-      playGame('paper');
-  }"
-    >
-      Papers
-    </button>
-
-    <!-- FOR SCISSORS -->
-
-    <button
-      onclick="{
-      playGame('scissors');
-  }"
-    >
-      Scissors
-    </button>
-
-    <button
-      onclick="
-      localStorage.removeItem('score');
-      score.wins = 0;
-      score.losses = 0;
-      score.ties = 0;
-    alert('Score has been reset.');
-    "
-    >
-      Reset Score
-    </button>
   </body>
 </html>
