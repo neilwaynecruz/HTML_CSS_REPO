@@ -7,5 +7,7 @@
       "path": "../xampp/htdocs/lesson1"
     }
   ],
-  "settings": {}
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "HTML_CSS_REPO"
+  }
 }
