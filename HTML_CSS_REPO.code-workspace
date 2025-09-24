@@ -4,10 +4,10 @@
       "path": "."
     },
     {
-      "path": "../xampp/htdocs/lesson1"
+      "path": "../xampp/htdocs"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "HTML_CSS_REPO"
+    "liveServer.settings.multiRootWorkspaceName": "htdocs"
   }
 }

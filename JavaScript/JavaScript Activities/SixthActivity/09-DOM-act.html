@@ -8,6 +8,18 @@
   <body>
     <p>YouTube Subscribe Button</p>
     <button onclick="subcribeButton();" class="subscribe-btn">Subscribe</button>
+    <br />
+    <br />
+    <br />
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Order under $40 = +$10 shipping.</p>
+    <p>Order over $40 = Free shipping.</p>
+    <input type="text" placeholder="cost of order" class="input-value" />
+    <button class="calculate-price" onclick="calculateButton()">
+      Calculate
+    </button>
+    <p class="price-converted"></p>
 
     <script>
       function subcribeButton() {
@@ -18,6 +30,23 @@
         } else {
           elementButton.innerText = "Subscribe";
         }
+      }
+
+      function calculateButton() {
+        const orderValue = parseFloat(
+          document.querySelector(".input-value").value
+        );
+        let finalPrice;
+
+        if (orderValue < 40) {
+          finalPrice = orderValue + 10;
+        } else {
+          finalPrice = orderValue;
+        }
+
+        document.querySelector(
+          ".price-converted"
+        ).innerHTML = `Final Price: $${finalPrice}`;
       }
     </script>
   </body>
