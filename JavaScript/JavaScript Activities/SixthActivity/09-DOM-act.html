@@ -15,11 +15,14 @@
     <p>Amazon Shipping Calculator</p>
     <p>Order under $40 = +$10 shipping.</p>
     <p>Order over $40 = Free shipping.</p>
-    <input type="text" placeholder="cost of order" class="input-value" />
-    <button class="calculate-price" onclick="calculateButton()">
-      Calculate
-    </button>
-    <p class="price-converted"></p>
+    <input
+      type="text"
+      placeholder="cost of order"
+      class="js-input-value"
+      onkeydown="handleCostKeyDown(event);"
+    />
+    <button onclick="calculateButton()">Calculate</button>
+    <p class="js-price-converted"></p>
 
     <script>
       function subcribeButton() {
@@ -33,8 +36,9 @@
       }
 
       function calculateButton() {
-        const orderValue = parseFloat(
-          document.querySelector(".input-value").value
+        const orderValue = Number(
+          // or we can use parseFloat
+          document.querySelector(".js-input-value").value
         );
         let finalPrice;
 
@@ -45,8 +49,16 @@
         }
 
         document.querySelector(
-          ".price-converted"
+          ".js-price-converted"
         ).innerHTML = `Final Price: $${finalPrice}`;
+      }
+
+      function handleCostKeyDown(event) {
+        if (event.key === "Enter") {
+          calculateButton();
+        } else {
+          return;
+        }
       }
     </script>
   </body>
