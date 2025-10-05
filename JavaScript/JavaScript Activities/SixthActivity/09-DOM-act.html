@@ -43,7 +43,7 @@
         let finalPrice;
 
         if (orderValue < 40) {
-          finalPrice = orderValue + 10;
+          finalPrice = Math.round(orderValue * 100 + 1000) / 100;
         } else {
           finalPrice = orderValue;
         }
