@@ -5,5 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9g</title>
   </head>
-  <body></body>
+  <body>
+    <input
+      type="text"
+      placeholder="cost of order"
+      class="js-input-value"
+      onkeydown="handleCostKeyDown(event);"
+    />
+    <button onclick="calculateButton()">Calculate</button>
+    <p class="js-price-converted"></p>
+
+    <script>
+      function calculateButton() {
+        const orderValue = Number(
+          // or we can use parseFloat
+          document.querySelector(".js-input-value").value
+        );
+        let finalPrice;
+
+        if (orderValue < 40) {
+          finalPrice = Math.round(orderValue * 100 + 1000) / 100;
+        } else {
+          finalPrice = orderValue;
+        }
+
+        document.querySelector(
+          ".js-price-converted"
+        ).innerHTML = `Final Price: $${finalPrice}`;
+      }
+
+      function handleCostKeyDown(event) {
+        if (event.key === "Enter") {
+          calculateButton();
+        } else {
+          return;
+        }
+      }
+    </script>
+  </body>
 </html>

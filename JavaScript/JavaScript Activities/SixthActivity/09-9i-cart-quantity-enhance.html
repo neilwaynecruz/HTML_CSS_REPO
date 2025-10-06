@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart Quantity</title>
+    <style></style>
+  </head>
+  <body>
+    <p>Cart Quantity</p>
+    <button
+      onclick="
+      document.querySelector('.js-text').innerHTML = `Cart quantity: ${cartQuantity}`
+    "
+    >
+      Show Quantity
+    </button>
+
+    <button
+      onclick="
+        updateCartQuantity(1);
+      "
+    >
+      Add to Cart
+    </button>
+
+    <button
+      onclick="
+        updateCartQuantity(2);
+      "
+    >
+      +2
+    </button>
+
+    <button
+      onclick="
+        updateCartQuantity(3);
+      "
+    >
+      +3
+    </button>
+
+    <button
+      onclick="
+        updateCartQuantity(4);
+      "
+    >
+      +4
+    </button>
+
+    <button
+      onclick="
+      updateCartQuantity(5);
+      "
+    >
+      +5
+    </button>
+
+    <button
+      onclick="
+        updateCartQuantity(-1);
+      "
+    >
+      Remove from cart
+    </button>
+
+    <button
+      onclick="
+        updateCartQuantity(-2);
+      "
+    >
+      -2
+    </button>
+
+    <button
+      onclick="
+        updateCartQuantity(-3);
+      "
+    >
+      -3
+    </button>
+
+    <button
+      onclick='
+      cartQuantity = 0; 
+      document.querySelector(".js-text").innerHTML = `Cart quantity: ${cartQuantity}`;
+      alert("Cart was reset.");
+      '
+    >
+      Reset Cart
+    </button>
+    <br />
+    <p class="js-text"></p>
+
+    <!-- for javascript -->
+    <script>
+      let cartQuantity = 0; // initializing cart quantity variable
+
+      function updateCartQuantity(newQuantity) {
+        if (newQuantity > 0) {
+          if (cartQuantity + newQuantity > 10) {
+            alert(
+              "You have reached the MAXIMUM quantity of 10 items in your cart."
+            );
+            return;
+          } else {
+            cartQuantity += newQuantity;
+            document.querySelector(
+              ".js-text"
+            ).innerHTML = `Cart quantity: ${cartQuantity}`;
+            return;
+          }
+        } else if (newQuantity < 0) {
+          if (cartQuantity - Math.abs(newQuantity) < 0) {
+            alert("NOT ENOUGH items in cart to remove");
+            return;
+          } else {
+            cartQuantity -= Math.abs(newQuantity);
+            document.querySelector(
+              ".js-text"
+            ).innerHTML = `Cart quantity: ${cartQuantity}`;
+            return;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -5,5 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>9h</title>
   </head>
-  <body></body>
+  <body>
+    <input
+      type="text"
+      placeholder="Type something"
+      class="js-input"
+      onkeyup="handleKeyUp()"
+    />
+    <p class="js-message"></p>
+
+    <script>
+      function handleKeyUp() {
+        document.querySelector(".js-message").innerHTML =
+          document.querySelector(".js-input").value;
+      }
+    </script>
+  </body>
 </html>
