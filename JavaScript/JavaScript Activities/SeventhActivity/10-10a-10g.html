@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 10 Acts</title>
+    <style>
+      .gaming,
+      .music,
+      .tech {
+        padding: 10px 10px;
+        background-color: black;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+
+      .is-toggled {
+        padding: 10px 10px;
+        background-color: rgb(240, 240, 240);
+        color: black;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body style="font-family: Arial">
+    <!-- for 10a -->
+    for Amazon Buttons:
+    <button
+      style="
+        border: none;
+        background-color: rgb(255, 216, 20);
+        padding: 6px 25px;
+        border-radius: 20px;
+      "
+    >
+      Add to Cart
+    </button>
+    <!-- end for 10a -->
+    <br />
+    <br />
+    <!-- for 10b -->
+    for Uber Buttons:
+    <button
+      style="
+        padding: 10px 15px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+        font-size: 12px;
+        margin-right: 10px;
+      "
+    >
+      Request now
+    </button>
+    <button
+      style="
+        padding: 10px 15px;
+        border: none;
+        background-color: rgb(230, 230, 230);
+        color: black;
+        font-weight: bold;
+        border-radius: 4px;
+        font-size: 12px;
+      "
+    >
+      Schedule for later
+    </button>
+    <!-- end for 10b -->
+
+    <br />
+    <br />
+    <!--  for 10c -->
+    <button class="js-button">Test</button>
+    <!--  end for 10c -->
+    <br />
+    <br />
+    <!-- for 10e, 10f, 10g -->
+    <button class="gaming" onclick="onOffButton('gaming');">Gaming</button>
+    <button class="music" onclick="onOffButton('music');">Music</button>
+    <button class="tech" onclick="onOffButton('tech');">Tech</button>
+
+    <script>
+      console.log(
+        document.querySelector(".js-button").classList.contains("js-button") // for 10c
+      );
+
+      // for 10e, 10f, 10g
+      function onOffButton(choice) {
+        const button_gaming = document.querySelector(".gaming");
+        const button_music = document.querySelector(".music");
+        const button_tech = document.querySelector(".tech");
+
+        if (choice === "gaming") {
+          if (button_gaming.classList.contains("is-toggled")) {
+            button_gaming.classList.remove("is-toggled");
+          } else {
+            button_gaming.classList.add("is-toggled");
+            button_music.classList.remove("is-toggled");
+            button_tech.classList.remove("is-toggled");
+          }
+        } else if (choice === "music") {
+          if (button_music.classList.contains("is-toggled")) {
+            button_music.classList.remove("is-toggled");
+          } else {
+            button_music.classList.add("is-toggled");
+            button_gaming.classList.remove("is-toggled");
+            button_tech.classList.remove("is-toggled");
+          }
+        } else {
+          if (button_tech.classList.contains("is-toggled")) {
+            button_tech.classList.remove("is-toggled");
+          } else {
+            button_tech.classList.add("is-toggled");
+            button_music.classList.remove("is-toggled");
+            button_gaming.classList.remove("is-toggled");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
