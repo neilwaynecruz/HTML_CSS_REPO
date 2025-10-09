@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+      .subscribe-btn {
+        color: white;
+        background-color: black;
+        font-weight: 700;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-bottom: 33.4px;
+      }
+
+      .is-subscribed {
+        color: black;
+        background-color: rgb(240, 240, 240);
+        font-weight: 700;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .css-input_value {
+        padding: 10px;
+        font-size: 15px;
+      }
+
+      .calculate-btn {
+        padding: 12px 15px;
+        border: none;
+        color: white;
+        background-color: green;
+        font-size: 15px;
+        cursor: pointer;
+      }
+
+      .js-pricce-converted-error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button onclick="subcribeButton();" class="js-subscribe-btn subscribe-btn">
+      Subscribe
+    </button>
+
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders under $40 = +$10 shipping.</p>
+    <p>Orders over $40 = FREE shipping.</p>
+    <input
+      type="text"
+      placeholder="Cost of order"
+      class="js-input-value css-input_value"
+      onkeydown="handleCostKeyDown(event);"
+    />
+    <button onclick="calculateButton()" class="calculate-btn">Calculate</button>
+    <p class="js-price-converted"></p>
+
+    <script>
+      function subcribeButton() {
+        const elementButton = document.querySelector(".js-subscribe-btn");
+
+        if (elementButton.innerText === "Subscribe") {
+          elementButton.innerText = "Subscribed";
+          elementButton.classList.add("is-subscribed");
+        } else {
+          elementButton.innerText = "Subscribe";
+          elementButton.classList.remove("is-subscribed");
+        }
+      }
+
+      function calculateButton() {
+        const orderValue = Number(
+          // or we can use parseFloat
+          document.querySelector(".js-input-value").value
+        );
+        let finalPrice;
+
+        if (orderValue < 0 || isNaN(orderValue)) {
+          document
+            .querySelector(".js-price-converted")
+            .classList.add("js-pricce-converted-error");
+
+          document.querySelector(
+            ".js-price-converted"
+          ).innerHTML = `Error: cost \"connot\" be less than 0 or \"not\" a number`;
+          return;
+        }
+
+        document
+          .querySelector(".js-price-converted")
+          .classList.remove("js-pricce-converted-error");
+
+        if (orderValue < 40) {
+          finalPrice = Math.round(orderValue * 100 + 1000) / 100;
+        } else {
+          finalPrice = orderValue;
+        }
+
+        document.querySelector(
+          ".js-price-converted"
+        ).innerHTML = `Final Price: $${finalPrice}`;
+      }
+
+      function handleCostKeyDown(event) {
+        if (event.key === "Enter") {
+          calculateButton();
+        } else {
+          return;
+        }
+      }
+    </script>
+  </body>
+</html>

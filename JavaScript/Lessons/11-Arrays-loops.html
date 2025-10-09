@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays and Loops</title>
+  </head>
+  <body>
+    <p class="myArr1"></p>
+    <script>
+      const myArr1 = [1, 2, 3, 4, 5];
+      const myArr2 = [
+        1,
+        true,
+        false,
+        4.23,
+        { Name: "Neil Wayne Cruz" },
+        [14, 1],
+      ];
+
+      myArr1[0] = 10;
+      console.log(myArr1);
+      console.log(myArr2);
+      console.log(typeof myArr2);
+      console.log(Array.isArray(myArr2));
+
+      //methods
+      console.log(myArr2.length); // .length
+      myArr1.push(230); //.push
+      console.log(myArr1);
+
+      myArr1.splice(0, 3); //.splice
+      console.log(myArr1);
+    </script>
+  </body>
+</html>
