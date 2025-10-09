@@ -8,29 +8,59 @@
   <body>
     <p class="myArr1"></p>
     <script>
-      const myArr1 = [1, 2, 3, 4, 5];
-      const myArr2 = [
-        1,
-        true,
-        false,
-        4.23,
-        { Name: "Neil Wayne Cruz" },
-        [14, 1],
-      ];
+      // const myArr1 = [1, 2, 3, 4, 5];
+      // const myArr2 = [
+      //   1,
+      //   true,
+      //   false,
+      //   4.23,
+      //   { Name: "Neil Wayne Cruz" },
+      //   [14, 1],
+      // ];
 
-      myArr1[0] = 10;
-      console.log(myArr1);
-      console.log(myArr2);
-      console.log(typeof myArr2);
-      console.log(Array.isArray(myArr2));
+      // myArr1[0] = 10;
+      // console.log(myArr1);
+      // console.log(myArr2);
+      // console.log(typeof myArr2);
+      // console.log(Array.isArray(myArr2));
 
-      //methods
-      console.log(myArr2.length); // .length
-      myArr1.push(230); //.push
-      console.log(myArr1);
+      // //methods
+      // console.log(myArr2.length); // .length
+      // myArr1.push(230); //.push
+      // console.log(myArr1);
 
-      myArr1.splice(0, 3); //.splice
-      console.log(myArr1);
+      // myArr1.splice(0, 3); //.splice
+      // console.log(myArr1);
+
+      // loops
+
+      /*
+      let i = 0;
+      while (i !== 15) {
+        i = Math.floor(Math.random() * 100 + 1);
+        console.log(i);
+      }
+        */
+
+      // for (let i = 1; i <= 10; i++) {
+      //   console.log(i);
+      // }
+
+      const nums = [2, 4, 6];
+      let sum = 0;
+
+      for (let i = 0; i < nums.length; i++) {
+        sum += nums[i];
+      }
+      console.log(sum);
+
+      const doubledNums = [];
+
+      for (let i = 0; i < nums.length; i++) {
+        doubledNums.push(nums[i] * 2);
+      }
+
+      console.log(doubledNums);
     </script>
   </body>
 </html>

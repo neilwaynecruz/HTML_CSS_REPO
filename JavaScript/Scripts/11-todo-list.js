@@ -1,4 +1,6 @@
 let todoList1 = []; // to store the todo items
+let todoList2 = [];
+renderTodoSimple2(); // to render the initial empty list
 
 function addTodoSimple() {
   const toDoValue = document.querySelector(".js-todo-name-simple").value;
@@ -14,8 +16,6 @@ function addTodoSimple() {
   console.log(todoList1);
   return;
 }
-
-let todoList2 = [];
 function addTodoSimple2() {
   const toDoValue = document.querySelector(".js-todo-name-simple-2").value;
 
