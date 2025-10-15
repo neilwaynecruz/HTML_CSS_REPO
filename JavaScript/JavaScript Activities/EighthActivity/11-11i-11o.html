@@ -6,6 +6,73 @@
     <title>Activity</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      // for 11i
+      const set1 = [1, 2, 3];
+      const output1 = addNum(set1, 2);
+      const set2 = [-3, 0, 3];
+      const output2 = addNum(set2, 3);
+      function addNum(arr1, num) {
+        for (let i = 0; i < arr1.length; i++) {
+          arr1[i] += num;
+        }
+        return arr1;
+      }
+      console.log(output1);
+      console.log(output2);
+
+      // for 11j
+      const set3 = [1, 2, 3];
+      const set4 = [4, 5, 6];
+      addArrays(set3, set4);
+      function addArrays(arr2, array3) {
+        for (let i = 0; i < arr2.length; i++) {
+          arr2[i] += array3[i];
+        }
+        return arr2;
+      }
+      console.log(set3);
+
+      //for 11k
+      set5 = [2, 4, 6, -2, -3, -2, 14];
+      console.log(countPositive(set5));
+      function countPositive(nums) {
+        let positiveCount = 0;
+        for (let i = 0; i < nums.length; i++) {
+          if (nums[i] > 0) positiveCount++;
+        }
+        return positiveCount;
+      }
+
+      //for 11l and 11m
+      console.log(minMax([2, 5, 100, 1, 2, 330, 20]));
+      console.log(minMax([]));
+
+      function minMax(nums) {
+        let fMinMax = {
+          min: 0,
+          max: 0,
+        };
+        fMinMax.min = nums[0];
+        fMinMax.max = nums[0];
+
+        if (nums.length === 0) {
+          fMinMax.min = null;
+          fMinMax.max = null;
+          return fMinMax;
+        }
+
+        for (let i = 0; i < nums.length; i++) {
+          if (nums[i] < fMinMax.min) {
+            fMinMax.min = nums[i];
+          } else {
+            if (nums[i] > fMinMax.max) fMinMax.max = nums[i];
+          }
+        }
+        return fMinMax;
+      }
+
+      // 11n
+    </script>
   </body>
 </html>
