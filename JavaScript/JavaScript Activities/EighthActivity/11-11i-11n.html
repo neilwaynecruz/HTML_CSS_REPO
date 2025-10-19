@@ -73,6 +73,23 @@
       }
 
       // 11n
+      function countWords(words) {
+        let counts = {};
+        for (let i = 0; i < words.length; i++) {
+          let newWord = words[i];
+
+          if (counts[newWord]) {
+            counts[newWord]++;
+          } else {
+            counts[newWord] = 1;
+          }
+        }
+        return counts;
+      }
+
+      console.log(
+        countWords(["apple", "grapes", "apple", "apple", "banana", "grapes"])
+      );
     </script>
   </body>
 </html>
