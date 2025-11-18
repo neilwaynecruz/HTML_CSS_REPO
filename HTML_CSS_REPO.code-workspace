@@ -4,10 +4,10 @@
       "path": "."
     },
     {
-      "path": "../xampp/htdocs"
+      "path": "../laragon/www"
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "htdocs"
+    "liveServer.settings.multiRootWorkspaceName": "www"
   }
 }

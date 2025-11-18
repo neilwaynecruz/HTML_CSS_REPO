@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>11o - 12v</title>
+  </head>
+  <body></body>
+
+  <script>
+    // for 11o - 11q
+    const arr1 = ["Search", "Hello", "World", "Neil", "Cruz", "Search"];
+    console.log(findIndex(arr1, "Hello"));
+
+    function findIndex(array, word) {
+      for (let i = 0; i < array.length; i++) {
+        if (word === array[i]) {
+          isFound = true;
+          return i;
+          break;
+        }
+      }
+    }
+
+    if (!isFound) {
+      console.log(-1);
+    }
+    // for 11q
+  </script>
+
+  <script>
+    // 11r - 11s
+
+    const arr2 = ["egg", "ham", "apple", "egg", "egg"];
+    const removedEgg = removeEgg(arr2);
+    console.log(removedEgg);
+
+    function removeEgg(foods) {
+      let deletedCount = 0;
+      for (let i = 0; i < foods.length; i++) {
+        if (foods[i] === "egg") {
+          foods.splice(i, 1);
+          deletedCount++;
+        }
+        if (deletedCount.length === 2) {
+          break;
+        }
+      }
+      return foods;
+    }
+  </script>
+</html>
